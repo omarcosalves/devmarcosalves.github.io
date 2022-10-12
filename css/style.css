@@ -186,3 +186,24 @@ header.sticky{
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.2deg) scale3d(1.0, 1.0, 1.0);
 }
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	align-items: center;
+	grid-gap: 2rem;
+}
+.about img{
+	max-width: 100%;
+	width: 350px;
+	height: auto;
+}
+.about h3{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.about p{
+	font-size: var(--p-font);
+	color: var(--second-color);
+	line-height: 25px;
+	margin-bottom: 20px;
+}
