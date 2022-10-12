@@ -152,3 +152,21 @@ header.sticky{
 .btn:hover{
 	transform: scale(1.2);
 }
+.services-itens{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, mínmax(210px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	text-align: center;
+}
+.service-item{
+	padding: 50px;
+	transition: ease .50s;
+	cursor: pointer;
+}
+.service-item-image img{
+	max-width: 100%;
+	width: 80px;
+	height: auto;
+	margin-bottom: 20px;
+}
