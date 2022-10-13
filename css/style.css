@@ -207,3 +207,16 @@ header.sticky{
 	line-height: 25px;
 	margin-bottom: 20px;
 }
+.portfolio-head{
+	text-align: center;
+}
+.portfolio-head h3{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.portfolio-head p{
+	font-size: var(--p-font);
+	collor: var(--second-color);
+	line-height: 25px;
+	margin-bottom: 20px;
+}	
