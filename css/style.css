@@ -240,7 +240,7 @@ footer{
 }
 .services-itens{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, mínmax(210px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(210px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	text-align: center;
@@ -267,7 +267,7 @@ footer{
 }
 .service-item:hover{
 	background: #fff;
-	box-shadow: 20px 0 50px 0 rgb(10 10 70 / 10%);
+	box-shadow: 20px 0 90px 0 rgb(10 10 70 / 10%);
 	border-radius: 12px;
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.2deg) scale3d(1.0, 1.0, 1.0);
@@ -283,11 +283,11 @@ footer{
 	width: 350px;
 	height: auto;
 }
-.about h3{
+.about-text h3{
 	font-size: 32px;
 	margin-bottom: 20px;
 }
-.about p{
+.about-text p{
 	font-size: var(--p-font);
 	color: var(--second-color);
 	line-height: 25px;
@@ -307,22 +307,23 @@ footer{
 	margin-bottom: 20px;
 }
 .portfolio-content{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-grid-gap: 2rem;
-align-items: center;
-margin-top: 10px;
-text-align: center;
-cursor: pointer;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	margin-top: 10px;
+	text-align: center;
+	cursor: pointer;
 }
 .col{
-position: relative;
+	position: relative;
 }
 .col img{
-max-width: 100%;
-width: 350px;
-object-fit: cover;
-border-radius: 10px;
+	max-width: 100%;
+	width: 350px;
+	height:  auto;
+	object-fit: cover;
+	border-radius: 10px;
 }
 .portfolio-content-text h3{
 	position: absolute;
