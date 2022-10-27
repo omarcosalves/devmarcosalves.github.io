@@ -238,6 +238,19 @@ header.sticky{
 	object-fit: cover;
 	border-radius: 10px;
 }
+.portfolio-content-text{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: all .30s;
+}
+.portfolio-content-text:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, #333);
+}
 .portfolio-content-text h3{
 	position: absolute;
 	width: 100%;
