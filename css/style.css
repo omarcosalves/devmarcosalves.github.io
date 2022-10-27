@@ -15,29 +15,17 @@ header{
 	top: 0;
 	right: 0;
 	z-index: 10;
-	background: yellow;
 }
 section{
 	max-width: 1110px;
 	margin: 0 auto;
 	padding-top: 100px;
 }
-header.sticky{
-	background: rgba(255, 255, 255, 0.8);
-	padding: 5px 0;
-	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-}
-footer{
-	text-align: center;
-	padding: 50px 0;
-	font-size: var(--p-font);
-	color: var(--second-color);
-}
 :root{
 	--bg-color: #F5F5F5;
 	--text-color: #1C1C1C;
 	--main-color: #FF6347;
-	--second-color: #DCDCDC;
+	--second-color: #708090;
 	--big-font: 4.5rem;
 	--h2-font: 3.2rem;
 	--p-font: 1.2rem;
@@ -50,87 +38,7 @@ footer{
 	justify-content: space-between;
 	padding: 10px;
 }
-@media(max-width: 1200px){
-	section{
-		padding-left: 20px;
-		padding-right: 20px;
-		transition: .3s;
-	}
-	.home-image img{
-		max-width: 450px;
-		transition: .3s;
-	}
-	:root{
-		--big-font: 4rem;
-		--h2-font: 2.5rem;
-		--p-font: 1rem;
-		transition: .3s;
-	}
-}
-@media(max-width: 860px){
-	.home{
-		grid-template-columns: 1fr;
-		min-height: 100vh;
-		grid-gap: 1rem;
-	}
-	.home-image{
-		text-align: center;
-	}
-}
-@media(max-width: 768px){
-	#navbar-icon{
-		display: block;
-	}
-	:root{
-		--big-font: 3rem;
-		--h2-font: 0.8rem;
-		transition: .3s;
-	}
-	.home{
-		min-height: 80%;
-	}
-	.navbar-header{
-		position: absolute;
-		top: -1000px;
-		left: 0;
-		right: 0;
-		flex-direction: column;
-		background: #ccc;
-		opacity: 0.8;
-		text-align: center;
-		transition: all .50s;
-	}
-	.navbar-header a{
-		display: block;
-		padding: 0.8rem;
-	}
-	.navbar-header a:hover{
-		background: var(--main-color);
-		color: var(--bg-color);
-	}
-	.navbar-header a::after{
-		display: none;
-	}
-	.navbar-header.active{
-		top: 100%;
-	}
-	.services-itens{
-		grid-template-columns: 1fr;
-	}
-	.about{
-		grid-template-columns: 1fr;
-	}
-	.about-image{
-		text-align: center;
-	}
-	.about-text{
-		text-align: center;
-	}
-	.portfolio-content{
-		grid-template-columns: 2fr;
-	}
-}
-/* ids e class */
+/* ids and class */
 .logo-header img{
 	width: 50px;
 }
@@ -204,7 +112,7 @@ footer{
 .home-text span{
 	color: var(--main-color);
 }
-.homet-text p{
+.home-text p{
 	font-size: var(--p-font);
 	color: var(--second-color);
 	line-height: 25px;
@@ -224,7 +132,7 @@ footer{
 .home-social-media a:hover{
 	transform: scale(1.2);
 	background: rgb(139, 0, 0);
-	transition: .50s
+	transition: .50s;
 }
 .btn{
 	display: inline-block;
@@ -238,9 +146,14 @@ footer{
 .btn:hover{
 	transform: scale(1.2);
 }
+header.sticky{
+	background: rgba(255, 255, 255, 0.8);
+	padding: 5px 0;
+	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
 .services-itens{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(270px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	text-align: center;
@@ -321,7 +234,7 @@ footer{
 .col img{
 	max-width: 100%;
 	width: 350px;
-	height:  auto;
+	height: auto;
 	object-fit: cover;
 	border-radius: 10px;
 }
@@ -392,4 +305,91 @@ footer{
 	border: none;
 	margin: 0 10px;
 	border-radius: 10px;
+}
+footer{
+	text-align: center;
+	padding: 50px 0;
+	font-size: var(--p-font);
+	color: var(--second-color);
+}
+
+@media(max-width: 1200px){
+	section{
+		padding-left: 20px;
+		padding-right: 20px;
+		transition: .3s;
+	}
+	.home-image img{
+		max-width: 450px;
+		transition: .3s;
+	}
+	:root{
+		--big-font: 4rem;
+		--h2-font: 2.5rem;
+		--p-font: 1rem;
+		transition: .3s;
+	}
+}
+@media(max-width: 860px){
+	.home{
+		grid-template-columns: 1fr;
+		min-height: 100vh;
+		grid-gap: 1rem;
+	}
+	.home-image{
+		text-align: center;
+	}
+}
+@media(max-width: 768px){
+	#navbar-icon{
+		display: block;
+	}
+	:root{
+		--big-font: 3rem;
+		--h2-font: 0.8rem;
+		transition: .3s;
+	}
+	.home{
+		min-height: 80%;
+	}
+	.navbar-header{
+		position: absolute;
+		top: -1000px;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: #ccc;
+		opacity: 0.8;
+		text-align: center;
+		transition: all .50s;
+	}
+	.navbar-header a{
+		display: block;
+		padding: 0.8rem;
+	}
+	.navbar-header a:hover{
+		background: var(--main-color);
+		color: var(--bg-color);
+	}
+	.navbar-header a::after{
+		display: none;
+	}
+	.navbar-header.active{
+		top: 100%;
+	}
+	.services-itens{
+		grid-template-columns: 1fr;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-image{
+		text-align: center;
+	}
+	.about-text{
+		text-align: center;
+	}
+	.portfolio-content{
+		grid-template-columns: 2fr;
+	}
 }
