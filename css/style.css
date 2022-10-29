@@ -406,3 +406,13 @@ footer{
 		grid-template-columns: 2fr;
 	}
 }
+@media(max-width: 480px){
+	.home-image img{
+		max-width: 300px;
+		transition: .3s;
+	}
+	.form input[type="email"]{
+		width: 300px;
+		margin-bottom: 5px;
+	}
+}
