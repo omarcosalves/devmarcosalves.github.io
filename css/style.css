@@ -158,8 +158,15 @@ header.sticky{
 	align-items: center;
 	text-align: center;
 }
+.services-title{
+	text-align: center;
+}
+.services-title h3{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
 .service-item{
-	padding: 50px;
+	padding: 35px;
 	transition: ease .50s;
 	cursor: pointer;
 }
